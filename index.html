@@ -1,0 +1,124 @@
+<!-- /* Author: Matt Joyce
+CS 290 Project */ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids' Guide to the Solar System</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    
+    
+    <div id="homePageSection1">
+        <h1 id="mainTitle">Kids' Guide to the Solar System: Rocky Planets!</h1>
+    </div>
+    
+
+    <div class="horizontalMenu" id="homePageDiv2">
+        <h2>Which Planet Would You Like to Visit?</h2>
+        <p>
+            <span><a class="link" href="mercury.html">Mercury</a></span> <span><a class="link" href="venus.html">Venus</a></span> 
+            <span><a class="link" href="earth.html">Earth</a></span> <span><a class="link" href="mars.html">Mars</a></span>
+        </p>
+    </div>
+
+    <div id="marsWeather">
+        <h2 id="marsWeatherHeadline">Mars Weather Tracker</h2>
+        <p>
+            <h4>Info courtesy of Nasa's InSight Mars lander. InSight is studying the weather at Elysium Planitia, a site near Mars' equator. </h4>
+        </p>
+        <p>
+            <span id="resMax"></span><span id="resMin"></span><span id="resAvg"></span>
+        </p>
+        <p>
+            <label for="submitWeather">Click for the most recent day's temperatures: </label>
+            <input type="button" value="click" id="submitWeather">
+        </p>
+    </div>
+
+    <!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+    <div id="carouselHolder">
+        <div class="mySlides fade">
+            <!-- <div class="numbertext">1 / 3</div> -->
+            <img src="nasa1.jpg" style="width:100%">
+            <div class="text">The view of Earth from the International Space Station. Image Credit: NASA/Reid Wiseman (@astro_reid)</div>
+          </div>
+        
+          <div class="mySlides fade">
+            <!-- <div class="numbertext">2 / 3</div> -->
+            <img src="omons2.jpg" style="width:100%">
+            <div class="text">Mars' Olympus Mons / Image Credit: NASA/MOLA Science Team/ O. de Goursac, Adrian Lark: </div>
+          </div>
+
+          <div class="mySlides fade">
+            <!-- <div class="numbertext">3 / 3</div> -->
+            <img src="venus2.jpg" style="width:100%">
+            <div class="text">Venus as seen by Japanese probe Akatsuki / Image Credit: Japan Aerospace Exploration Agency</div>
+          </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <br>
+
+    <div id="scrollBox">
+        <p>Welcome to the kids' guide to the solar system! These pages contain information about the first four planets of the solar system: the rocky planets. You may also see these
+        planets called "terrestrial" planets. That's another word for rocky, as opposed to the four "gas giants" which lie further away from the sun. Take a look
+        at the pages for each of the rocky planets and learn about earth and its rocky neighbors.</p>
+
+        <p>Wondering if it's a beach day on Mars? Check out the most recently available temperatures at Mars' equator, courtesy of Nasa's Insight lander. </p>
+
+        <p>Also, be sure to check out the catchy solar system song from Kids' Learning Tube, below. </p>
+
+        <p>When you're finished, feel free to take our rocky planets quiz to check your knowledge!</p>
+
+        <p>If you'd like, download this awesome solar system coloring page! <button id="downloadBtn">Download</button> (Copyright © 2020 Public Broadcasting Service (PBS))</p>
+
+        <p>Finally, check out the links to the National Aeronautical and Space Administration (NASA) kids' page <a class="link" href="https://spaceplace.nasa.gov/menu/solar-system/">here</a>
+        and the European Space Agency (ESA) kids page <a class="link" href="https://www.esa.int/kids/en/learn/Our_Universe/Planets_and_moons/The_Solar_System_and_its_planets">here</a>.</p>
+    </div>
+
+    <div id="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/mQrlgH97v94" frameborder="0" allow="accelerometer; autoplay; 
+        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+
+    <form id="homePageQuiz">
+        <fieldset>
+            <legend>Take a Planets Quiz!</legend>
+                <p>
+                    <label for="Q1">Which planet is the hottest?</label>
+                    <input type="text" name="Q1" id="Q1">
+                    <span id="res1"></span>
+                    
+                </p>
+                
+                <p>
+                    <label for="Q2">Which planet has the tallest mountain?</label>
+                    <input type="text" name="Q2" id="Q2">
+                    <span id="res2"></span>
+                </p>
+
+                <p>
+                    <label for="age">Which planet is the smallest?</label>
+                    <input type="text" name="Q3" id="Q3">
+                    <span id="res3"></span>
+                    
+                </p>
+                <p>
+                    <input type="button" value="submit answers!" id="submitPost">
+                </p>
+        </fieldset>
+    </form>
+
+    <p id="finalcredit">Banner Image Credit: SpaceX / Background Image Credit: Alphacoders.com </p>
+    
+    
+</body>
+<script src="project.js"></script>
+</html>
