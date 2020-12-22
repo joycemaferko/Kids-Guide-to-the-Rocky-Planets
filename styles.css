@@ -1,0 +1,252 @@
+/* Author: Matt Joyce
+CS 290 Project */
+
+body{
+    background-image: url("https://images6.alphacoders.com/912/thumb-1920-912042.jpg");
+    background-size: cover;
+}
+
+.subpageBody{
+    background-image: url("https://images6.alphacoders.com/912/thumb-1920-912042.jpg");
+    background-size: cover;
+}
+
+#homePageSection1{
+    width: 80%;
+    height: 200px;
+    position: relative;
+    top: 30%;
+    border: solid;
+    background-image: url("https://images.unsplash.com/photo-1457365050282-c53d772ef8b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60");
+    background-size: cover; 
+    opacity: .8;
+    margin: 0 auto; 
+    color: white;
+}
+
+/* https://www.w3schools.com/howto/howto_js_slideshow.asp */
+#carouselHolder{
+    max-width: 800px;
+    position: relative;
+    top: 60px;
+    margin: auto;
+}
+
+.text{
+    font-weight: 700;
+    text-align: center;
+}
+
+/* https://www.w3schools.com/howto/howto_js_slideshow.asp */
+.mySlides {
+    display: none;
+}
+
+/* https://www.w3schools.com/howto/howto_js_slideshow.asp */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* https://www.w3schools.com/howto/howto_js_slideshow.asp */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* https://www.w3schools.com/howto/howto_js_slideshow.asp */
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+/* https://www.w3schools.com/howto/howto_js_slideshow.asp */
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* https://www.w3schools.com/howto/howto_js_slideshow.asp */
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.horizontalMenu{
+    position: relative;
+    width: 80%;
+    height: 100px;
+    background-color: midnightblue;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    border: solid; 
+    top: 20px;
+    opacity: 0.712;
+}
+
+.horizontalMenu p span{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#marsWeather{
+    position: relative;
+    width: 70%;
+    height: 190px;
+    background-color: rgba(248, 0, 12, 0.712);
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    border: solid; 
+    border-color: red;
+    top: 40px;
+}
+
+#marsWeather p span{
+    margin-left: 50px;
+    margin-right: 50px;
+    color: rgba(0, 238, 255, 1);
+}
+
+
+
+.planetPic1 img{
+    height: 360px;
+    width: 600px;
+    top: 30px; 
+    display: block;
+    position: relative;
+    margin: 10px auto;
+}
+
+.planetPic1 p{
+    top: 30px; 
+    display: block;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    font-weight: 700;
+}
+
+.planetFacts{
+    position: relative;
+    top: 75px; 
+    height: 300px;
+    width: 500px;
+    border: solid; 
+    background-color: midnightblue;
+    color: white; 
+    margin: 0 auto;
+    padding: 15px;
+}
+
+#planetFactsEarth{
+    height: 200px;
+}
+
+#planetFactsMercury{
+    height: 200px;
+}
+
+#mainTitle{
+    position: relative;
+    top: 75px;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 50px;
+}
+
+.subTitle{ 
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 50px;
+    position: relative;
+    top: 30px;
+}
+
+#homePageQuiz{
+    position: relative;
+    top: 120px;
+    width: 900px;
+    background-color: rgba(227, 0, 248, 0.479);
+    border: solid;
+    border-color: white;
+    margin: 0 auto; 
+    
+}
+
+#homePageQuiz span{
+    font-size: 20px;
+    padding-left: 20px; 
+}
+
+#scrollBox{
+    position: relative;
+    top: 70px;
+    height: 200px;
+    width: 775px;
+    overflow: scroll; 
+    background-color: midnightblue;
+    color: white;
+    margin: 0 auto; 
+    font-size: 20px;
+    padding: 10px;
+    border: solid; 
+
+}
+
+#video{
+    position: relative;
+    top: 100px; 
+    width: 560px;
+    height: 315px;
+    margin: 0 auto; 
+}
+
+.link{
+    color: darkorange; 
+}
+
+.link:hover{
+    color: lightgreen;
+}
+
+.homePageLink{
+    position: relative;
+    top: 100px; 
+}
+.homePageLink p{
+    position: relative;
+    font-size: 33px;
+
+    height: 40px;
+    width: 275px;
+    background-color: midnightblue;
+    text-align: center;
+}
+
+/* Concept learned from https://www.w3schools.com/howto/howto_css_download_button.asp */
+#downloadBtn:hover{
+    background-color: skyblue;
+}
+
+#finalcredit{
+    position: relative;
+    top: 130px;
+    font-weight: 700;
+}
